@@ -53,7 +53,7 @@ async function deleteWebsites() {
 
 function addWebsite() {
     console.clear();
-    console.log(`Add a webiste :`);
+    console.log(`Add a website :(http://google.com)`);
     let url = rlsync.question("url : ");
     while (!helpers.isValidUrl(url)) {
         console.log(`Not valid Url again`);
