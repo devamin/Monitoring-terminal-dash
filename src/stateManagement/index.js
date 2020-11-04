@@ -1,5 +1,4 @@
 const websiteRepo = require('../repositories/websiteRepo')
-const watcher = require('../service/watcher')
 const dashboard = require('../monitor/dashboard')
 const Website = require("../model/website")
 const metricsRepo = require("../repositories/metricsRepo")

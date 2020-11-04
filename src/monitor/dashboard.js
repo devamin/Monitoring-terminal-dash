@@ -1,7 +1,6 @@
 var blessed = require('blessed')
   , contrib = require('blessed-contrib');
 const Website = require('../model/website')
-const logger = require('../logger')
 
 class Dashboard {
 
