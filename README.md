@@ -1,5 +1,5 @@
 # Monitoring-terminal-dash
-Fast implementation of a monitoring tools using NodeJs based on Terminal capabilities for visualization and interaction. 
+Fast implementation of a monitoring tools using NodeJs based on Terminal capabilities for visualization and interactions. 
 
 * Getting Started
 * Improve
