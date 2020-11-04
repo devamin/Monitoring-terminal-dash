@@ -1,0 +1,19 @@
+{
+  "name": "datadog-monitor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node src/test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "blessed": "^0.1.81",
+    "blessed-contrib": "^4.8.20",
+    "readline-sync": "^1.4.10",
+    "server-destroy": "^1.0.1",
+    "sqlite3": "^5.0.0"
+  }
+}

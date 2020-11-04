@@ -1,0 +1,21 @@
+{
+    "db_file_path": "storage/storage.db",
+    "test": [
+        {
+            "url": "http://facebook.com",
+            "interval": 2000
+        },
+        {
+            "url": "http://instagram.com",
+            "interval": 2000
+        },
+        {
+            "url": "http://aminebk.com",
+            "interval": 2000
+        },
+        {
+            "url": "http://google.com",
+            "interval": 2000
+        }
+    ]
+}
