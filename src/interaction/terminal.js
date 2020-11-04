@@ -7,6 +7,7 @@ const manager = require('../stateManagement')
 
 
 function mainMenu() {
+    console.clear();
     let choice = rlsync.question(`
 ################################################################
 #                                                              #
@@ -29,6 +30,7 @@ Menu :
         case 1: addWebsite(); break;
         case 2: deleteWebsites(); break;
         case 3: start(); break;
+        case 4: process.exit(0);
     }
 }
 
@@ -37,6 +39,7 @@ async function start() {
 }
 
 async function deleteWebsites() {
+    console.clear();
     let websites = await websiteRepo.all();
     websites.forEach(website => console.log(website.toString()))
     console.log("delete websites :e.g 1 2 3")
