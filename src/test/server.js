@@ -17,5 +17,5 @@ function startAndOff(port) {
 
 module.exports = function (port) {
     startAndOff(port);
-    setInterval(startAndOff, 10000, port);
+    return setInterval(startAndOff, 10000, port);
 }

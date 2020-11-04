@@ -22,20 +22,19 @@ async function main() {
     await migrate();
     await Promise.all(mockWebsites.map(website => websiteRepo.insert(new Website(website.url, website.interval))));
     let localServers = [
-        new Website("http://localhost:3000", 2000),
-        new Website("http://localhost:3200", 2000),
-        new Website("http://localhost:3400", 2000),
-        new Website("http://localhost:3500", 2000),
+        new Website("http://localhost:3000", 1000),
+        new Website("http://localhost:3200", 1000),
+        new Website("http://localhost:3400", 1000),
+        new Website("http://localhost:3500", 1000),
     ];
 
     await Promise.all(localServers.map(s => websiteRepo.insert(s)));
-    server(3000);
-    server(3200);
-    server(3400);
-    server(3500);
+    let s1 = server(3000);
+    let s2 = server(3200);
+    let s3 = server(3400);
+    let s4 = server(3500);
 
     manager.start();
-
 }
 main();
 

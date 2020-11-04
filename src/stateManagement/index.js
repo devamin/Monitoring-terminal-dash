@@ -18,7 +18,14 @@ class Manager {
         this.update1HLastStats();
         this.alertWatcher();
         dashboard.monitor(this.websites);
+    }
 
+    stop() {
+        clearInterval(this.intervalUpdate10)
+        clearInterval(this.intervalUpdate1H)
+        clearInterval(this.intervalAlert)
+        this.websites.forEach(website => clearInterval(website.watcher))
+        dashboard.stop();
     }
 
     update10MLastStats() {
@@ -29,7 +36,7 @@ class Manager {
 
         }
         update();
-        setInterval(update, 10000)
+        this.intervalUpdate10 = setInterval(update, 10000)
     }
 
     update1HLastStats() {
@@ -38,7 +45,7 @@ class Manager {
                 .then(() => dashboard.updateTable1HStats())
         }
         update();
-        setInterval(update, 60000)
+        this.intervalUpdate1H = setInterval(update, 60000)
     }
 
     keepAnEyeOnWebsites() {
@@ -90,7 +97,7 @@ class Manager {
             dashboard.updateAlertsTable(this.alert.alerts)
         }
         update();
-        setInterval(update, 10000)
+        this.intervalAlert = setInterval(update, 1000)
     }
 }
 

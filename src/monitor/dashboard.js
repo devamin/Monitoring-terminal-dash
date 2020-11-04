@@ -179,7 +179,7 @@ class Dashboard {
 
     for (let i = alerts.length - 1; i >= 0; i--) {
       let row = []
-      row.push(alerts[i].time.getHours() + ":" + alerts[i].time.getMinutes() + ":" + alerts[i].time.getSeconds())
+      row.push(alerts[i].time.toISOString().match(/(\d{2}:){2}\d{2}/)[0])
       row.push(alerts[i].name)
       row.push(parseFloat(alerts[i].availability).toFixed(2))
       row.push(alerts[i].message)
@@ -189,8 +189,9 @@ class Dashboard {
     this.alertTable.setData({ headers: ['Time', 'Name', 'Availability', 'Message'], data: data })
   }
 
-
-
+  stop() {
+    this.screen.destroy();
+  }
 }
 
 module.exports = new Dashboard();

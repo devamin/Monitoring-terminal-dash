@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node src/test",
+    "test": "node ./node_modules/mocha/bin/mocha src/test/index.test.js",
+    "example": "node ./src/test/index.js",
     "start": "node index"
   },
   "author": "",
@@ -16,5 +17,9 @@
     "readline-sync": "^1.4.10",
     "server-destroy": "^1.0.1",
     "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1"
   }
 }
