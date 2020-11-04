@@ -26,14 +26,16 @@ Hints:
 * to navigate in dashboard use tab to switch between Tables, and arrows for list 
 
 ### Mocked services
-To start the monitor on predefined values and localhost servers run :
+To start the monitor on predefined values and localhost servers run:  
+[:warning: ports number(3000,3200,3400,3500) should be free]
 ```
 npm run-script example 
 ```
 
 ### Test
 
-I created an End To End test by creating mocked services that turn on and off randomly to generate alerts you can execute it by calling : 
+I created an End To End test by creating mocked services that turn on and off randomly to generate alerts you can execute it by calling :  
+[:warning: ports number(3000,3200,3400,3500) should be free]
 ```
 npm test
 ```
