@@ -1,9 +1,7 @@
 # Monitoring-terminal-dash
 Fast implementation of a monitoring tools using NodeJs based on Terminal capabilities for visualization and interactions. 
 
-* Getting Started
-* Improvement
-* Technology choice
+![Dashboard](screens/dashboard.gif)
 
 ## Getting Started
 
