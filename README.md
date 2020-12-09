@@ -1,5 +1,5 @@
 # Monitoring-terminal-dash
-Fast implementation of a monitoring tools using NodeJs based on Terminal capabilities for visualization and interactions. 
+Fast implementation of a monitoring tools using NodeJs based on Terminal capabilities for visualization and interaction. 
 
 ![Dashboard](screens/dashboard.gif)
 
@@ -45,7 +45,7 @@ I can Improve this application design by adding the following:
 * Alert using emails, slack ...
 * Create client version to monitor inside metrics such as (CPU, RAM, Traffic, ...)
 
-But this architecture is not scalable because it's monolithic monitor one the improvement that I thought of is creating a distributed monitoring system using : 
+But this architecture is not scalable because it's monolithic monitor one of the improvements that I thought of is creating a distributed monitoring system using : 
 * Watcher services
 * Realtime processing using (Brokers, Kafka...)
 * Big data storage 
