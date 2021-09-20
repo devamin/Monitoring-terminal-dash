@@ -1,5 +1,5 @@
 # Monitoring-terminal-dash
-Fast implementation of a monitoring tools using NodeJs based on Terminal capabilities for visualization and interaction. 
+MVP implementation of a monitoring tools using NodeJs based on Terminal capabilities for visualization and interaction. 
 
 ![Dashboard](screens/dashboard.gif)
 
